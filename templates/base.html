@@ -1,0 +1,128 @@
+<!--
+  | Website designed by JstnLT (https://jstnlt.my.id)
+  | This project is open source: https://github.com/JastinXyz/discord-bot-landing-page-web
+-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    {% endblock head %}
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta content="DYBTS" property="og:title" />
+    <meta content="一個全中文的Discord機器人" property="og:description" />
+    <meta content="https://cdn.discordapp.com/avatars/881788746222157884/c509fe9813837da63278d08cdd39ddbb.png" property="og:image" />
+    <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
+    <title>DYBTS - a Discord Bot</title>
+    <link rel="stylesheet" href="{% static 'bot/css/bulma.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bot/css/style.css' %}"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+    <script src="{% static 'bot/js/jquery-3.6.0.js' %}"></script>
+
+</head>
+<body>
+<!-- Back To Top Start -->
+<a id="backtotop" data-tippy-content="回到頂端">
+    <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+</a>
+<!-- Back To Top End -->
+
+<!-- Navbar Start -->
+<nav
+        class="navbar is-fixed-top"
+        role="navigation"
+        aria-label="main navigation"
+>
+    <div class="navbar-brand mt-2 mb-2">
+        <a class="navbar-item" href="/">
+            <strong>DYBTS</strong>
+
+            <!-- or if you want to use image -->
+            <!-- <img
+              src="image link or path"
+              width="112"
+              height="28"
+            /> -->
+        </a>
+
+        <a
+                role="button"
+                class="navbar-burger has-text-white"
+                data-target="navMenu"
+                aria-label="menu"
+                aria-expanded="false"
+        >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a href="/" class="navbar-item is-tab">
+                首頁
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <a href="https://discord.gg/7AHak4nSbE" class="navbar-item is-tab" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a href="#" class="button is-blurple" disabled>
+                        <strong>
+                            <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                            Login
+                        </strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+{% block body %}
+{% endblock body %}
+
+<!-- Footer Section Start -->
+<footer class="footer bg-base">
+    <div class="content has-text-centered has-text-white">
+        <div class="mb-2">
+            <a href="https://discord.gg/F8GfF37GWh" class="has-text-white" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </div>
+
+        <p>
+            <span class="has-text-weight-bold">DYBTS</span>
+            <br/>
+            &copy; <span id="cp-year"></span> Copyright AD. All Rights
+            Reserved.
+        </p>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="{% static 'bot/js/script.js' %}"></script>
+</body>
+</html>
