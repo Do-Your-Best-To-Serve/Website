@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <!-- Hero Section Start -->
+	<section class="hero bg-base is-fullheight">
+        <div class="hero-body">
+            <div class="">
+                <div class="columns" data-aos="fade-left">
+                    <img class="image has-image-centered mt-4"
+                         src="https://cdn.discordapp.com/avatars/1008634918869418024/8e63f43dc457a2598a101ad24b2ecf98.png?size=1024"
+                         alt="hero image"
+                         style="width: 20rem;"
+                    />
+                    <div class="column mr-6 mt-12" data-aos="fade-up">
+                        <p class="title has-text-white has-text-weight-bold">
+                            非常感謝您選擇了DYBTS
+                        </p>
+                        <p class="subtitle has-text-grey-light is-size-6 mt-3">
+                            這隻機器人有一個非常強大的支援團隊，如果使用上有任何問題歡迎至此詢問
+                        </p>
+                        <input type="button" value="加入支援伺服器" class="button is-info" onclick="window.open('https://discord.gg/7AHak4nSbE')">
+                        <input type="button" value="回到首頁" class="button is-info" onclick="location.href='https://dybts.ml'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock body %}

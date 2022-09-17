@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from DYBTS_website.views import home
+from DYBTS_website import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('', views.home),
+    path('invited/', views.invited)
 ]
