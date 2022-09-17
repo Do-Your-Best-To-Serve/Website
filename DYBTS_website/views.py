@@ -6,3 +6,12 @@ def home(request):
 
 def invited(request):
     return render(request, 'invited.html')
+
+def terms(request):
+    return render(request, 'terms.html')
+
+def tos(request):
+    return render(request, 'tos.html')
+
+def privacy(request):
+    return render(request, 'privacy.html')

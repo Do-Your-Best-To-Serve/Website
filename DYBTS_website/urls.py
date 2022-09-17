@@ -21,5 +21,8 @@ from DYBTS_website import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('invited/', views.invited)
+    path('invited/', views.invited),
+    path('terms/', views.terms),
+    path('terms/tos/', views.tos),
+    path('terms/privacy/', views.privacy),
 ]

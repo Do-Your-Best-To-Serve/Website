@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <!-- Hero Section Start -->
+	<section class="hero bg-base is-fullheight">
+        <div class="hero-body">
+            <div class="">
+                <div class="columns" data-aos="fade-left">
+                    <img class="image has-image-centered mt-4"
+                         src="https://cdn.discordapp.com/avatars/1008634918869418024/8e63f43dc457a2598a101ad24b2ecf98.png?size=1024"
+                         alt="hero image"
+                         style="width: 20rem;"
+                    />
+                    <div class="column mr-6 mt-12" data-aos="fade-up">
+                        <p class="title has-text-white has-text-weight-bold">
+                            非常感謝您選擇了DYBTS，為了維護您使用本機器人的權益，請詳細閱讀以下條款
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms of Service Section Start -->
+    <section id="features" class="section mt-6">
+        <div style="width: 70%; margin-left: 15%; max-width: 1900px">
+            <!-- single feature start (Left) -->
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column mr-6">
+                        <h4 class="title">一、本服務使用協議</h4>
+                        <p class="subtitle mt-3">
+                            •邀請機器人並使用其功能(不包含查詢條款指令)即表示您已同意本機器人的服務條款與隱私權條款<br>•您有權在與它共享的任何Discord伺服器上自由使用本服務<br>•您可以將它邀請到您擁有【管理群組】權限的群組<br>•若您違反本機器人任一條款或違反Discord Inc.的服務條款、隱私權保護政策、社群準則任一條款，則您使用本服務的權利可能會遭我方移除<br>•若您使用到RoleUI等功能，它可能會存取/保存隱私權條款所提及之數據，其蒐集原因是方便指令後續運行(包含恢復按鈕等)<br>•若您使用音樂功能，則請勿將其用於商業用<br>因為我們並沒有正式向創作者們獲取授權，因此請勿將其用於營利及非法用途
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- single feature end (Left) -->
+
+            <!-- single feature start (Right) -->
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column">
+                        <h4 class="title">
+                            二、使用本服務的年齡限制
+                        </h4>
+                        <p class="subtitle mt-3">
+                            •未滿Discord Inc.服務條款中所述最低年齡的用戶可使用本服務，但必須有監護人在旁查看本服務條款與隱私權條款，若監護人不同意，則請勿使用，否則您有可能會被我方封鎖而無法使用任何指令
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- single feature end (Right) -->
+
+            <!-- single feature start (Left) -->
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column mr-6">
+                        <h4 class="title">
+                            三、本服務與Discord Inc.的關聯
+                        </h4>
+                        <p class="subtitle mt-3">
+                            •本服務不隸屬於、支持或由Discord Inc.製作<br>•若與Discord Inc.或其任何商標、功能、訊息內容、圖片等有關連純屬巧合<br>•我們不會聲稱擁有Discord Inc.的任何資產、商標或其他知識產權的版權所有權
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- single feature end (Left) -->
+
+            <!-- single feature start (Right) -->
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column">
+                        <h4 class="title">四、責任追究</h4>
+                        <p class="subtitle mt-3">
+                            •機器人開發者可能不會對無意侵犯以上條款者做出永久封禁使用權等懲處<br>請注意，若您惡意違反條款則不再此範圍內
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- single feature end (Right) -->
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column">
+                        <h4 class="title">五、條款更改</h4>
+                        <p class="subtitle mt-3">
+                            •我們保留自行決定更新這些條款的權利，若不同意新的更改，您可以於條款更新後一周內(7天)向我們反應更改條款部分細項，當然，您也可以選擇直接踢出機器人或不使用任何服務而不需遵守以上條款
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column">
+                        <h4 class="title">六、聯絡我們</h4>
+                        <p class="subtitle mt-3">
+                            •如您需要聯絡我們可以通過電子郵件support@keyneschen.tk或者選擇加入支援群組
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column">
+                        <h4 class="title">七、資料刪除</h4>
+                        <p class="subtitle mt-3">
+                            •您可以使用delete_data來做移除機器人所存取的資料(僅限使用者)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Stats Section Start -->
+    <section id="stats" class="section mt-6">
+        <!--<div class="has-text-centered">
+            <h1 class="title lined">Stats</h1>
+            <div class="line line-center blurple"></div>
+        </div>
+
+        <div class="columns mt-6">
+            <div class="column has-text-centered">
+                <p class="title has-text-weight-bold lined">000</p>
+                <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-server"></i> Servers</span>
+            </div>
+
+            <div class="column has-text-centered">
+                <p class="title has-text-weight-bold lined">000</p>
+                <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-terminal"></i> Commands</span>
+            </div>
+
+            <div class="column has-text-centered">
+                <p class="title has-text-weight-bold lined">000</p>
+                <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-users"></i> Users</span>
+            </div>
+        </div>-->
+    </section>
+    <!-- Stats Section End -->
+
+    <!-- Invite Section Start -->
+    <section class="section mt-6">
+        <div class="columns">
+            <div class="column has-text-left">
+                <p class="title has-text-weight-bold">
+                    還在猶豫甚麼？趕快邀請DYBTS來你的伺服器吧！
+                </p>
+                <p class="subtitle mt-3 has-text-gray">
+                    邀請我把你的Discord伺服器變得不一樣
+                </p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1008634918869418024&permissions=1644971949567&redirect_uri=https%3A%2F%2Fnekotw.cloudxact.com%2Fthank-you-for-invite%2F&response_type=code&scope=bot%20applications.commands" class="button is-blurple is-medium">
+                    <strong>
+                        <i class="fa-solid fa-book"></i>
+                        開始吧！
+                    </strong>
+                </a>
+            </div>
+
+            <div class="column"></div>
+        </div>
+    </section>
+{% endblock body %}
