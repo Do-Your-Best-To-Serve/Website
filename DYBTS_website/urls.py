@@ -25,5 +25,5 @@ urlpatterns = [
     path('terms/', views.terms),
     path('terms/tos/', views.tos),
     path('terms/privacy/', views.privacy),
-    path('webhook/')
+    path('webhook/', views.vote)
 ]
