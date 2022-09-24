@@ -20,7 +20,7 @@ def privacy(request):
     return render(request, 'privacy.html')
 
 async def vote(request):
-    if request.method == "POST":
+    if request.POST:
         if request.headers.authorization == "DYBTSVOTE":
             type = request.body.type
             if type == "test":
@@ -39,3 +39,4 @@ async def vote(request):
             return HttpResponse(code=500)
     else:
         return HttpResponse(code=500)
+
