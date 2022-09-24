@@ -20,7 +20,7 @@ def privacy(request):
     return render(request, 'privacy.html')
 
 async def vote(request):
-        if request.headers['Authorization'] == "DYBTSVOTE":
+        if request.headers == "DYBTSVOTE":
             data = request.json()
             type = data.get("type")
             if type == "test":
