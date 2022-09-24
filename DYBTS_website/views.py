@@ -19,7 +19,7 @@ def tos(request):
 def privacy(request):
     return render(request, 'privacy.html')
 
-def vote(request):
+async def vote(request):
     if request.method == "POST":
         if request.headers.authorization == "DYBTSVOTE":
             type = request.body.type
