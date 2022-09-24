@@ -25,5 +25,9 @@ async def vote(request):
             type = data.get("type")
             if type == "test":
                 print(data)
+                return HttpResponse(200)
             else:
                 print(data)
+                return HttpResponse(200)
+        else:
+            return HttpResponse(500)
