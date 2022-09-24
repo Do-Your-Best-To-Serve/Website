@@ -1,5 +1,4 @@
 """DYBTS_website URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
 Examples:
@@ -19,11 +18,10 @@ from django.urls import path
 from DYBTS_website import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', views.home),
-    path('invited/', views.invited),
-    path('terms/', views.terms),
-    path('terms/tos/', views.tos),
-    path('terms/privacy/', views.privacy),
-    path('webhook/', views.vote)
+    path('invited', views.invited),
+    path('terms', views.terms),
+    path('terms/tos', views.tos),
+    path('terms/privacy', views.privacy)
 ]
