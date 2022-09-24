@@ -22,12 +22,14 @@ def privacy(request):
 async def vote(request):
         if request.headers == "DYBTSVOTE":
             data = request.json()
-            type = data.get("type")
+            type = data["type"]
             if type == "test":
                 print(data)
+                print("收到測試投票的Webhook")
                 return HttpResponse(200)
             else:
                 print(data)
+                print("收到正式投票的Webhook")
                 return HttpResponse(200)
         else:
             return HttpResponse(500)
