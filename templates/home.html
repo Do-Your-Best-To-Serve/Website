@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <!-- Hero Section Start -->
+    <section class="hero bg-base is-fullheight">
+        <div class="hero-body">
+            <div class="">
+                <div class="columns" data-aos="fade-left">
+                    <img class="image has-image-centered mt-4"
+                         src="https://cdn.discordapp.com/avatars/1008634918869418024/8e63f43dc457a2598a101ad24b2ecf98.png?size=1024"
+                         alt="hero image"
+                         style="width: 20rem;"
+                    />
+                    <div class="column mr-6 mt-12" data-aos="fade-up">
+                        <p class="title has-text-white has-text-weight-bold">
+                            是時候邀請 DYBTS 到你的伺服器了
+                        </p>
+                        <p class="subtitle has-text-grey-light is-size-6 mt-3">
+                            打造專屬於你的Discord伺服器
+                        </p>
+                        <div class="buttons">
+                            <a href="https://discord.com/oauth2/authorize?client_id=1008634918869418024&permissions=1644971949567&redirect_uri=https%3A%2F%2Fdybts.ml%2Finvited&response_type=code&scope=bot%20applications.commands"
+                               class="button is-info">
+                                <strong>開始吧</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered" data-tippy-content="往下看">
+            <a href="#features">
+                <i class="fa-solid fa-circle-chevron-down fa-lg vert-move2 has-text-white"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section mt-6">
+        <div style="width: 70%; margin-left: 15%; max-width: 1900px">
+            <!-- single feature start (Left) -->
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column mr-6">
+                        <h4 class="title">斜線指令</h4>
+                        <p class="subtitle mt-3">
+                            整個機器人都是斜線指令，對於查詢指令非常方便，且都很美觀
+                        </p>
+                    </div>
+                    <div class="column" data-aos="fade-left">
+                        <img
+                                class="image has-image-centered"
+                                src="{% static 'bot/img/slash_command.png' %}"
+                                alt="feature1 img"
+                                style="width: 20rem;"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!-- single feature end (Left) -->
+
+            <!-- single feature start (Right) -->
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column">
+                        <h4 class="title">
+                            真人驗證
+                        </h4>
+                        <p class="subtitle mt-3">
+                            怕有成員加入來水人數嗎？這個功能可以防止有人來水群喔！
+                        </p>
+                    </div>
+                    <div class="column" data-aos="fade-left">
+                        <img
+                                class="image has-image-centered"
+                                src="{% static 'bot/img/verify.png' %}"
+                                alt="feature1 img"
+                                style="width: 20rem;"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!-- single feature end (Right) -->
+
+            <!-- single feature start (Left) -->
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column mr-6">
+                        <h4 class="title">
+                            客服單
+                        </h4>
+                        <p class="subtitle mt-3">
+                            比照知名的Discord機器人，DYBTS也有客服單功能，可以讓你的成員更方便的向你反應問題
+                        </p>
+                    </div>
+                    <div class="column" data-aos="fade-left">
+                        <img
+                                class="image has-image-centered"
+                                src="{% static 'bot/img/ticket.png' %}"
+                                alt="feature1 img"
+                                style="width: 20rem;"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!-- single feature end (Left) -->
+
+            <!-- single feature start (Right) -->
+            <div class="single-feature">
+
+                <div class="columns mt-6">
+                    <div class="column">
+                        <h4 class="title">音樂</h4>
+                        <p class="subtitle mt-3">
+                            由Wavelink提供的音樂功能，可以讓你的成員更方便的聽音樂
+                        </p>
+                    </div>
+                    <div class="column" data-aos="fade-left">
+                        <img
+                                class="image has-image-centered"
+                                src="{% static 'bot/img/music.png' %}"
+                                alt="feature1 img"
+                                style="width: 20rem;"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!-- single feature end (Right) -->
+        </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Stats Section Start -->
+    <section id="stats" class="section mt-6">
+        <!--<div class="has-text-centered">
+            <h1 class="title lined">Stats</h1>
+            <div class="line line-center blurple"></div>
+        </div>
+
+        <div class="columns mt-6">
+            <div class="column has-text-centered">
+                <p class="title has-text-weight-bold lined">000</p>
+                <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-server"></i> Servers</span>
+            </div>
+
+            <div class="column has-text-centered">
+                <p class="title has-text-weight-bold lined">000</p>
+                <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-terminal"></i> Commands</span>
+            </div>
+
+            <div class="column has-text-centered">
+                <p class="title has-text-weight-bold lined">000</p>
+                <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-users"></i> Users</span>
+            </div>
+        </div>-->
+    </section>
+    <!-- Stats Section End -->
+
+    <!-- Invite Section Start -->
+    <section class="section mt-6">
+        <div class="columns">
+            <div class="column has-text-left">
+                <p class="title has-text-weight-bold">
+                    還在猶豫甚麼？趕快邀請DYBTS來你的伺服器吧！
+                </p>
+                <p class="subtitle mt-3 has-text-gray">
+                    邀請我把你的Discord伺服器變得不一樣
+                </p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1008634918869418024&permissions=1644971949567&redirect_uri=https%3A%2F%2Fdybts.ml%2Finvited&response_type=code&scope=bot%20applications.commands" class="button is-blurple is-medium">
+                    <strong>
+                        <i class="fa-solid fa-book"></i>
+                        開始吧！
+                    </strong>
+                </a>
+            </div>
+
+            <div class="column"></div>
+        </div>
+    </section>
+    <!-- Invite Section End -->
+{% endblock body %}
