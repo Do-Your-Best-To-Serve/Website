@@ -23,7 +23,7 @@ def invited():
     return render_template('invited.html')
 
 @app.route('/voted', methods=['POST'])
-asycn def voted():
+async def voted():
     if request.method == 'POST':
         if request.headers['Authorization'] == 'DYBTSVOTE':
             data = reequest.json
