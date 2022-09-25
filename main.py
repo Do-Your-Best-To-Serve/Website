@@ -1,4 +1,4 @@
-from Flask import Flask, render_template
+from Flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -21,6 +21,18 @@ def tos():
 @app.route('/invited')
 def invited():
     return render_template('invited.html')
+
+@app.route('/voted', methods=['POST'])
+asycn def voted():
+    if request.method == 'POST':
+        if request.headers['Authorization'] == 'DYBTSVOTE':
+            data = reequest.json
+            print(data)
+            return "ok"
+        else:
+            return "unknown vote"
+    else:
+        return "not a vaild method"
 
 if __name__ == "__main__":
     app.run(debug=True, host='192.168.1.73', port=8000)
