@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block body %}
+    <!-- Hero Section Start -->
+    <section class="hero bg-base">
+        <div class="hero-body">
+            <div class="columns aos-init aos-animate" data-aos="fade-left">
+                <div class="column mr-6 mt-12" data-aos="fade-up">
+                    <p class="title has-text-white has-text-weight-bold">
+                        PLEASE SELECT A SERVER
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main" class="section mt-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="panel panel-default col-md-offset-3">
+                        <div class="panel-body">
+                            <div class="well well-lg" style="padding: 20px">
+                                {% for guild in render_guild %}
+                                    <div style="padding-bottom: 10px; display: flex; align-items: center">
+                                        <img class="img-responsive"
+                                             style="display:inline-block; height:80px; margin-top: 5px;"
+                                             src="https://cdn.discordapp.com/icons/{{ guild['id'] }}/{{ guild['icon'] }}.png">
+                                        <p class="title is-2">{{ guild['name'] }}</p>
+                                        <button style="position: absolute; right: 20px" type="button" class="button is-success pull-right">Go To Dashboard</button>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -91,12 +91,21 @@
 
             <div class="navbar-item">
                 <div class="buttons">
-                    <a href="" class="button is-blurple" disabled>
-                        <strong>
-                            <i class="fa-solid fa-right-to-bracket mr-2"></i>
-                            Login
-                        </strong>
-                    </a>
+                    {% if render_username %}
+                        <a href="logout" class="button is-blurple">
+                            <strong>
+                                <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                                {{ render_username }}
+                            </strong>
+                        </a>
+                    {% else %}
+                        <a href="login" class="button is-blurple">
+                            <strong>
+                                <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                                登入
+                            </strong>
+                        </a>
+                    {% endif %}
                 </div>
             </div>
         </div>
