@@ -56,6 +56,10 @@ def dashboard():
                                render_username=f'{username}#{usertag}', render_guild=user_guild_object)
     else:
         return redirect('login')
+    
+@app.errorhandler(404)
+async def page_not_found_error(error):
+    return render_template('404.html')
 
 
 if __name__ == "__main__":
