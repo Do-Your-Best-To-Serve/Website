@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block body %}
+    <!-- Hero Section Start -->
+    <section class="hero bg-base">
+        <div class="hero-body">
+            <div class="columns aos-init aos-animate" data-aos="fade-left">
+                <div class="column mr-6 mt-12" data-aos="fade-up">
+                    <p class="title has-text-white has-text-weight-bold">
+                        請選擇伺服器
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main" class="section mt-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="panel panel-default col-md-offset-3">
+                        <div class="panel-body">
+                            <div class="well well-lg" style="padding: 20px">
+                                {% for guild in render_guild %}
+                                    <div style="padding-bottom: 10px; display: flex; align-items: center">
+                                        <img class="img-responsive"
+                                             style="display:inline-block; height:80px; margin-top: 5px;"
+                                             src="https://cdn.discordapp.com/icons/{{ guild['id'] }}/{{ guild['icon'] }}.png">
+                                        <p class="title is-2">{{ guild['name'] }}</p>
+                                        <!--<button style="position: absolute; right: 20px" type="button" class="button is-success pull-right">邀請機器人</button>-->
+                                        <a href="https://discord.com/oauth2/authorize?client_id=1008634918869418024&permissions=1644971949567&redirect_uri=https%3A%2F%2Fdybts.ml%2Fshort%2Finvited&response_type=code&scope=bot%20applications.commands&guild_id={{ guild['id'] }}" style="position: absolute; right: 20px" type="button"
+                                           class="button is-success pull-right"><strong>邀請機器人</strong></a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
